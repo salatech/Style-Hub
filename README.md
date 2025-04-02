@@ -12,7 +12,7 @@
   </p>
 
   <img 
-    src="/homepage.png" 
+    src="./public/homepage.png" 
     alt="StyleHub Preview" 
     width="800" 
     height="400" 
@@ -157,21 +157,21 @@ The application will be available at `http://localhost:3000`
 
 <div align="center">
   <img 
-    src="/screenshot1.png" 
+    src="./public/screenshot1.png" 
     alt="Home Page" 
     width="400" 
     height="300" 
     style="border-radius: 8px; margin: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" 
   />
   <img 
-    src="/screenshot2.png" 
+    src="./public/screenshot2.png" 
     alt="Product Page" 
     width="400" 
     height="300" 
     style="border-radius: 8px; margin: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" 
   />
   <img 
-    src="/screenshot3.png" 
+    src="./public/screenshot3.png" 
     alt="Cart Page" 
     width="400" 
     height="300" 
