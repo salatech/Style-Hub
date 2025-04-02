@@ -1,7 +1,7 @@
 <div align="center">
-  <h1>🏠 StyleHub - Modern Home Decor Store</h1>
+  <h1>🏠 StyleHub</h1>
   <p>
-    <strong>A modern, responsive e-commerce platform for home decor enthusiasts</strong>
+    <strong>Modern Home Decor E-commerce Platform</strong>
   </p>
   
   <p>
@@ -11,7 +11,13 @@
     <a href="#screenshots">Screenshots</a>
   </p>
 
-  <img src="https://via.placeholder.com/800x400?text=StyleHub+Preview" alt="StyleHub Preview" width="800" height="400" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+  <img 
+    src="https://via.placeholder.com/800x400?text=StyleHub+Preview" 
+    alt="StyleHub Preview" 
+    width="800" 
+    height="400" 
+    style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
+  />
 </div>
 
 <br/>
@@ -19,57 +25,86 @@
 ## ✨ Features
 
 ### 🛍️ Shopping Experience
-- **Product Catalog**
-  - Responsive grid layout
-  - Advanced filtering and sorting
-  - Category-based navigation
-  - Real-time search functionality
-  - Detailed product views
 
-- **Shopping Cart**
-  - Real-time cart updates
-  - Quantity management
-  - Order summary
-  - Persistent cart state
-  - Secure checkout process
+#### Product Catalog
+- Responsive grid layout with dynamic filtering
+- Advanced sorting and category navigation
+- Real-time search with instant results
+- Detailed product views with specifications
+- Related products recommendations
 
-- **User Features**
-  - User authentication
-  - Wishlist functionality
-  - Order history
-  - Profile management
+#### Shopping Cart
+- Real-time cart updates and calculations
+- Intuitive quantity management
+- Comprehensive order summary
+- Persistent cart state across sessions
+- Secure checkout process with multiple payment options
+
+#### User Features
+- Seamless user authentication
+- Personalized wishlist management
+- Detailed order history tracking
+- Customizable user profile settings
 
 ### 🎨 Design & UX
-- **Modern Interface**
-  - Clean, minimalist design
-  - Responsive layout for all devices
-  - Smooth animations and transitions
-  - Intuitive navigation
 
-- **Performance**
-  - Fast loading times
-  - Optimized images
-  - Lazy loading
-  - Efficient state management
+#### Modern Interface
+- Clean, minimalist design language
+- Fully responsive layout for all devices
+- Smooth animations and transitions
+- Intuitive navigation patterns
+- Consistent visual hierarchy
+
+#### Performance Optimization
+- Lightning-fast loading times
+- Optimized image delivery
+- Efficient lazy loading
+- Smart state management
+- Reduced bundle size
 
 ## 🛠️ Tech Stack
 
 <table>
   <tr>
     <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="48" height="48" alt="React" />
+      <img 
+        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" 
+        width="48" 
+        height="48" 
+        alt="React" 
+      />
     </td>
     <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="48" height="48" alt="TypeScript" />
+      <img 
+        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" 
+        width="48" 
+        height="48" 
+        alt="TypeScript" 
+      />
     </td>
     <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg" width="48" height="48" alt="Material-UI" />
+      <img 
+        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg" 
+        width="48" 
+        height="48" 
+        alt="Material-UI" 
+      />
     </td>
     <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" width="48" height="48" alt="Redux" />
+      <img 
+        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" 
+        width="48" 
+        height="48" 
+        alt="Redux" 
+      />
     </td>
     <td align="center" width="96">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg" width="48" height="48" alt="Vite" />
+      <img 
+        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg" 
+        width="48" 
+        height="48" 
+        alt="Vite" 
+      />
     </td>
   </tr>
   <tr>
@@ -85,7 +120,7 @@
 
 ### Prerequisites
 - Node.js (v14 or higher)
-- npm or yarn
+- npm (v6 or higher) or yarn (v1.22 or higher)
 - Git
 
 ### Installation
@@ -121,27 +156,45 @@ The application will be available at `http://localhost:3000`
 ## 📱 Screenshots
 
 <div align="center">
-  <img src="https://via.placeholder.com/400x300?text=Home+Page" alt="Home Page" width="400" height="300" style="border-radius: 8px; margin: 10px;" />
-  <img src="https://via.placeholder.com/400x300?text=Product+Page" alt="Product Page" width="400" height="300" style="border-radius: 8px; margin: 10px;" />
-  <img src="https://via.placeholder.com/400x300?text=Cart+Page" alt="Cart Page" width="400" height="300" style="border-radius: 8px; margin: 10px;" />
+  <img 
+    src="https://via.placeholder.com/400x300?text=Home+Page" 
+    alt="Home Page" 
+    width="400" 
+    height="300" 
+    style="border-radius: 8px; margin: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" 
+  />
+  <img 
+    src="https://via.placeholder.com/400x300?text=Product+Page" 
+    alt="Product Page" 
+    width="400" 
+    height="300" 
+    style="border-radius: 8px; margin: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" 
+  />
+  <img 
+    src="https://via.placeholder.com/400x300?text=Cart+Page" 
+    alt="Cart Page" 
+    width="400" 
+    height="300" 
+    style="border-radius: 8px; margin: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" 
+  />
 </div>
 
 ## 📁 Project Structure
 
 ```
 src/
-├── components/          # Reusable components
-│   ├── common/         # Common UI components
-│   ├── layout/         # Layout components
-│   ├── product/        # Product-related components
-│   └── skeletons/      # Loading skeleton components
-├── features/           # Redux slices and features
-├── pages/             # Page components
-├── services/          # API services
-├── utils/             # Utility functions
-├── hooks/             # Custom hooks
-├── styles/            # Global styles
-└── types/             # TypeScript types
+├── components/          # Reusable UI components
+│   ├── common/         # Shared components (buttons, inputs, etc.)
+│   ├── layout/         # Layout components (header, footer, etc.)
+│   ├── product/        # Product-specific components
+│   └── skeletons/      # Loading state components
+├── features/           # Redux slices and feature logic
+├── pages/             # Page components and routes
+├── services/          # API and external service integrations
+├── utils/             # Helper functions and utilities
+├── hooks/             # Custom React hooks
+├── styles/            # Global styles and theme
+└── types/             # TypeScript type definitions
 ```
 
 ## 🤝 Contributing
@@ -158,7 +211,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Your Name** - *Initial work* - [YourGithub](https://github.com/yourusername)
+- **Solahudeen Abdulrahmon** - *Initial work* - [Salatech](https://github.com/salatech)
 
 ## 🙏 Acknowledgments
 
@@ -168,10 +221,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-For support, email support@stylehub.com or join our Slack channel.
+For support, email solahudeenbabatunde@gmail.com or join our Slack channel.
 
 ---
 
 <div align="center">
-  Made with ❤️ by <a href="https://github.com/yourusername">Your Name</a>
+  Made with ❤️ by <a href="https://github.com/salatech">Solahudeen Abdulrahmon</a>
 </div>
