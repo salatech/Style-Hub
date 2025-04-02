@@ -159,21 +159,14 @@ The application will be available at `http://localhost:3000`
   <img 
     src="./public/screenshot1.png" 
     alt="Home Page" 
-    width="400" 
+    width="500" 
     height="300" 
     style="border-radius: 8px; margin: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" 
   />
   <img 
     src="./public/screenshot2.png" 
     alt="Product Page" 
-    width="400" 
-    height="300" 
-    style="border-radius: 8px; margin: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" 
-  />
-  <img 
-    src="./public/screenshot3.png" 
-    alt="Cart Page" 
-    width="400" 
+    width="500" 
     height="300" 
     style="border-radius: 8px; margin: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" 
   />
