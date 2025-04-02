@@ -1,49 +1,85 @@
-# StyleHub - Modern Home Decor E-commerce Platform
+<div align="center">
+  <h1>🏠 StyleHub - Modern Home Decor Store</h1>
+  <p>
+    <strong>A modern, responsive e-commerce platform for home decor enthusiasts</strong>
+  </p>
+  
+  <p>
+    <a href="#features">Features</a> •
+    <a href="#tech-stack">Tech Stack</a> •
+    <a href="#getting-started">Getting Started</a> •
+    <a href="#screenshots">Screenshots</a>
+  </p>
 
-A modern, responsive e-commerce platform built with React, TypeScript, and Material-UI, featuring beautiful animations and a seamless shopping experience.
+  <img src="https://via.placeholder.com/800x400?text=StyleHub+Preview" alt="StyleHub Preview" width="800" height="400" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+</div>
 
-![StyleHub Preview](https://via.placeholder.com/800x400?text=StyleHub+Preview)
+<br/>
 
-## 🌟 Features
+## ✨ Features
 
-### Core Features
-- 🛍️ **Product Catalog**
+### 🛍️ Shopping Experience
+- **Product Catalog**
   - Responsive grid layout
   - Advanced filtering and sorting
-  - Product categories
-  - Search functionality
-  - Product details with specifications
+  - Category-based navigation
+  - Real-time search functionality
+  - Detailed product views
 
-- 🛒 **Shopping Cart**
+- **Shopping Cart**
   - Real-time cart updates
   - Quantity management
   - Order summary
   - Persistent cart state
+  - Secure checkout process
 
-- 👤 **User Experience**
-  - Smooth page transitions
-  - Loading states with skeletons
-  - Responsive design for all devices
-  - Beautiful animations
+- **User Features**
+  - User authentication
+  - Wishlist functionality
+  - Order history
+  - Profile management
 
-### Technical Features
-- ⚡ **Performance Optimized**
+### 🎨 Design & UX
+- **Modern Interface**
+  - Clean, minimalist design
+  - Responsive layout for all devices
+  - Smooth animations and transitions
+  - Intuitive navigation
+
+- **Performance**
+  - Fast loading times
+  - Optimized images
   - Lazy loading
-  - Image optimization
   - Efficient state management
-  - Smooth animations
 
-- 🎨 **Modern UI/UX**
-  - Material-UI components
-  - Custom animations with Framer Motion
-  - Responsive design
-  - Dark/Light mode support
+## 🛠️ Tech Stack
 
-- 🔒 **Security**
-  - Secure payment processing
-  - Protected routes
-  - Data validation
-  - Error handling
+<table>
+  <tr>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="48" height="48" alt="React" />
+    </td>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="48" height="48" alt="TypeScript" />
+    </td>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg" width="48" height="48" alt="Material-UI" />
+    </td>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" width="48" height="48" alt="Redux" />
+    </td>
+    <td align="center" width="96">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg" width="48" height="48" alt="Vite" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center">React</td>
+    <td align="center">TypeScript</td>
+    <td align="center">Material-UI</td>
+    <td align="center">Redux</td>
+    <td align="center">Vite</td>
+  </tr>
+</table>
 
 ## 🚀 Getting Started
 
@@ -54,114 +90,61 @@ A modern, responsive e-commerce platform built with React, TypeScript, and Mater
 
 ### Installation
 
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/stylehub.git
-cd stylehub
-```
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/stylehub.git
+   cd stylehub
+   ```
 
-2. Install dependencies
-```bash
-npm install
-# or
-yarn install
-```
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-3. Create a `.env` file in the root directory
-```env
-REACT_APP_API_URL=your_api_url
-REACT_APP_STRIPE_PUBLIC_KEY=your_stripe_key
-```
+3. **Set up environment variables**
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
 
-4. Start the development server
-```bash
-npm start
-# or
-yarn start
-```
+4. **Start the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
 The application will be available at `http://localhost:3000`
 
-## 🏗️ Project Structure
+## 📱 Screenshots
+
+<div align="center">
+  <img src="https://via.placeholder.com/400x300?text=Home+Page" alt="Home Page" width="400" height="300" style="border-radius: 8px; margin: 10px;" />
+  <img src="https://via.placeholder.com/400x300?text=Product+Page" alt="Product Page" width="400" height="300" style="border-radius: 8px; margin: 10px;" />
+  <img src="https://via.placeholder.com/400x300?text=Cart+Page" alt="Cart Page" width="400" height="300" style="border-radius: 8px; margin: 10px;" />
+</div>
+
+## 📁 Project Structure
 
 ```
 src/
-├── components/
-│   ├── common/          # Reusable components
-│   ├── layout/          # Layout components
-│   ├── product/         # Product-related components
-│   └── skeletons/       # Loading skeleton components
-├── features/            # Redux slices and features
-├── pages/              # Page components
-├── services/           # API services
-├── utils/              # Utility functions
-├── hooks/              # Custom hooks
-├── styles/             # Global styles
-└── types/              # TypeScript types
+├── components/          # Reusable components
+│   ├── common/         # Common UI components
+│   ├── layout/         # Layout components
+│   ├── product/        # Product-related components
+│   └── skeletons/      # Loading skeleton components
+├── features/           # Redux slices and features
+├── pages/             # Page components
+├── services/          # API services
+├── utils/             # Utility functions
+├── hooks/             # Custom hooks
+├── styles/            # Global styles
+└── types/             # TypeScript types
 ```
 
-## 🛠️ Built With
-
-- [React](https://reactjs.org/) - Frontend framework
-- [TypeScript](https://www.typescriptlang.org/) - Type safety
-- [Material-UI](https://mui.com/) - UI components
-- [Redux Toolkit](https://redux-toolkit.js.org/) - State management
-- [Framer Motion](https://www.framer.com/motion/) - Animations
-- [React Router](https://reactrouter.com/) - Routing
-- [Axios](https://axios-http.com/) - API client
-
-## 📱 Pages
-
-### Home Page
-- Hero section with call-to-action
-- Featured products
-- Categories showcase
-- Customer testimonials
-- FAQ section
-
-### Product Pages
-- Product listing with filters
-- Detailed product view
-- Related products
-- Reviews and ratings
-- Share functionality
-
-### Cart Page
-- Cart items management
-- Order summary
-- Checkout process
-- Payment integration
-
-## 🎨 Styling
-
-The project uses a combination of:
-- Material-UI's styling system
-- Custom theme configuration
-- CSS-in-JS with emotion
-- Responsive design principles
-
-## 🔄 State Management
-
-Redux Toolkit is used for state management with the following slices:
-- Cart
-- Products
-- User
-- UI state
-
-## 🚀 Deployment
-
-The application can be deployed to various platforms:
-
-1. Build the application
-```bash
-npm run build
-# or
-yarn build
-```
-
-2. Deploy to your preferred platform (Vercel, Netlify, etc.)
-
-## 📝 Contributing
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -175,7 +158,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- Your Name - Initial work - [YourGithub](https://github.com/salatech)
+- **Your Name** - *Initial work* - [YourGithub](https://github.com/yourusername)
 
 ## 🙏 Acknowledgments
 
@@ -189,4 +172,6 @@ For support, email support@stylehub.com or join our Slack channel.
 
 ---
 
-Made with ❤️ by [Your Name](https://github.com/salatech)
+<div align="center">
+  Made with ❤️ by <a href="https://github.com/yourusername">Your Name</a>
+</div>
