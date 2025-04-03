@@ -4,11 +4,8 @@ import {
   Box,
   Container,
   Typography,
-  Grid,
   Paper,
   IconButton,
-  useTheme,
-  useMediaQuery,
 } from '@mui/material';
 import { motion } from 'framer-motion';
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -18,8 +15,6 @@ import { useNavigate } from 'react-router-dom';
 import { LikedProduct } from '../features/likedProducts/likedProductsSlice';
 
 const LikedProducts = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { items: likedProducts } = useSelector((state: RootState) => state.likedProducts);

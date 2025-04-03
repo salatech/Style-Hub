@@ -1,8 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
 import {
   Box,
-  Container,
   Typography,
   Button,
   TextField,
@@ -18,7 +16,6 @@ import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
 const Cart = () => {
-  const navigate = useNavigate();
   const dispatch = useDispatch();
   const { items, total } = useSelector((state: RootState) => state.cart);
   const [isLoading, setIsLoading] = useState(true);

@@ -11,7 +11,6 @@ import {
   IconButton,
   CircularProgress,
   Alert,
-  Badge,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
@@ -20,7 +19,6 @@ import BuildIcon from '@mui/icons-material/Build';
 import StarIcon from '@mui/icons-material/Star';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import FavoriteIcon from '@mui/icons-material/Favorite';
 import { api } from '../services/api';
 
 const Home = () => {
@@ -28,7 +26,6 @@ const Home = () => {
   const [newCollections, setNewCollections] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [likedProducts, setLikedProducts] = useState<any[]>([]);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -74,47 +71,6 @@ const Home = () => {
     ];
     return colorSets[Math.floor(Math.random() * colorSets.length)];
   };
-
-  const categories = [
-    {
-      title: 'Living Room Furniture',
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7',
-      path: '/products?category=living-room',
-    },
-    {
-      title: 'Bedroom Furniture',
-      image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85',
-      path: '/products?category=bedroom',
-    },
-    {
-      title: 'Office Furniture',
-      image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36',
-      path: '/products?category=office',
-    },
-  ];
-
-  const faqs = [
-    {
-      question: 'What is the estimated delivery time for my order?',
-      answer: 'Standard delivery typically takes 3-5 business days. For larger items, delivery may take 5-7 business days.',
-    },
-    {
-      question: "Do you offer customization options for the products?",
-      answer: 'Yes, many of our products can be customized in terms of color, material, and size. Please contact our customer service for details.',
-    },
-    {
-      question: 'What is your return and refund policy?',
-      answer: 'We offer a 30-day return policy for most items. Products must be in original condition with tags attached.',
-    },
-    {
-      question: 'Do you offer furniture assembly services?',
-      answer: 'Yes, we offer professional assembly services for an additional fee in select areas.',
-    },
-    {
-      question: 'How can I track my order status?',
-      answer: 'You can track your order through your account dashboard or using the tracking number provided in your shipping confirmation email.',
-    },
-  ];
 
   const scrollToContent = () => {
     window.scrollTo({

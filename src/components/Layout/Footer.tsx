@@ -1,4 +1,4 @@
-import { Box, Container, Typography, TextField, Button, Link, useTheme, useMediaQuery, Snackbar, Alert } from '@mui/material';
+import { Box, Container, Typography, TextField, Button, Link, Snackbar, Alert } from '@mui/material';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -7,8 +7,6 @@ import EmailIcon from '@mui/icons-material/Email';
 import { useState } from 'react';
 
 const Footer = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const [email, setEmail] = useState('');
   const [snackbar, setSnackbar] = useState({
     open: false,

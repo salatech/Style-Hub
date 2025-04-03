@@ -9,16 +9,9 @@ import {
   Tabs,
   Tab,
   Paper,
-  Divider,
-  TextField,
   Alert,
-  CircularProgress,
-  Chip,
   Container,
-  Grid,
   IconButton,
-  useTheme,
-  useMediaQuery,
   Skeleton,
   Avatar,
   Snackbar,
@@ -28,7 +21,6 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
-import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import { RootState, AppDispatch } from '../features/store';
 import { addItem } from '../features/cart/cartSlice';
 import { fetchProductById } from '../features/products/productsSlice';
@@ -38,7 +30,7 @@ import ProductReviewsSkeleton from '../components/skeletons/ProductReviewsSkelet
 import MotionWrapper from '../components/MotionWrapper';
 import { generateSpecifications, generateReviews } from '../utils/productData';
 import { toggleLike } from '../features/likedProducts/likedProductsSlice';
-import { fadeIn, slideUp, scaleIn, cardHover, buttonHover, staggerContainer } from '../utils/animationVariants';
+import { cardHover, buttonHover, staggerContainer } from '../utils/animationVariants';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -66,22 +58,15 @@ const ProductDetails = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const dispatch = useDispatch<AppDispatch>();
-  const [quantity, setQuantity] = useState(1);
   const [activeTab, setActiveTab] = useState(0);
-  const [showAddedToCart, setShowAddedToCart] = useState(false);
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const [product, setProduct] = useState<any>(null);
   const [loading, setLoading] = useState(true);
-  const [selectedImage, setSelectedImage] = useState(0);
   const [relatedProducts, setRelatedProducts] = useState<any[]>([]);
   const [specifications, setSpecifications] = useState<any[]>([]);
   const [reviews, setReviews] = useState<any[]>([]);
-  const { items: likedProducts } = useSelector((state: RootState) => state.likedProducts);
   const [showShareSuccess, setShowShareSuccess] = useState(false);
   const [shareMessage, setShareMessage] = useState('');
-
-  const { selectedProduct: productState, loading: productLoading, error } = useSelector((state: RootState) => state.products);
+  const { items: likedProducts } = useSelector((state: RootState) => state.likedProducts);
 
   useEffect(() => {
     if (id) {
@@ -115,13 +100,6 @@ const ProductDetails = () => {
     fetchProduct();
   }, [id]);
 
-  const handleQuantityChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const value = parseInt(event.target.value);
-    if (value > 0) {
-      setQuantity(value);
-    }
-  };
-
   const handleAddToCart = () => {
     if (product) {
       dispatch(
@@ -129,12 +107,11 @@ const ProductDetails = () => {
           id: product.id,
           name: product.title,
           price: product.price,
-          image: product.image,
-          quantity,
+          quantity: 1,
+          image: product.image
         })
       );
-      setShowAddedToCart(true);
-      setTimeout(() => setShowAddedToCart(false), 3000);
+      setTimeout(() => {}, 3000);
     }
   };
 
@@ -275,19 +252,6 @@ const ProductDetails = () => {
     );
   }
 
-  if (error) {
-    return (
-      <Box  sx={{ py: 4 }}>
-        <Alert severity="error" sx={{ mb: 2 }}>
-          {error}
-        </Alert>
-        <Button variant="contained" onClick={() => navigate('/products')}>
-          Back to Products
-        </Button>
-      </Box>
-    );
-  }
-
   if (!product) {
     return (
       <Box sx={{ py: 4 }}>
@@ -351,14 +315,13 @@ const ProductDetails = () => {
                       gap: 2
                     }}
                   >
-                    {relatedProducts.map((relatedProduct, index) => (
+                    {relatedProducts.map((relatedProduct) => (
                       <Paper
                         key={relatedProduct.id}
                         component={motion.div}
                         variants={cardHover}
                         whileHover="hover"
                         sx={{ p: 1, cursor: 'pointer' }}
-                        onClick={() => setSelectedImage(relatedProduct.id)}
                       >
                         <img
                           src={relatedProduct.image}

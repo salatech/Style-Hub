@@ -98,7 +98,7 @@ export const generateReviews = (count: number = 5): ProductReview[] => {
   return Array.from({ length: count }, () => ({
     id: faker.string.uuid(),
     userName: faker.internet.userName(),
-    rating: faker.number.float({ min: 1, max: 5, precision: 0.5 }),
+    rating: faker.number.float({ min: 1, max: 5, fractionDigits: 1 }),
     date: faker.date.past({ years: 1 }).toLocaleDateString(),
     comment: faker.lorem.paragraphs(1),
     helpful: faker.number.int({ min: 0, max: 100 })

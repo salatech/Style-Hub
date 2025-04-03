@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Typography, Button, IconButton, Badge, Box } from '@mui/material';
+import { AppBar, Toolbar, Typography, IconButton, Badge, Box } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { useSelector } from 'react-redux';

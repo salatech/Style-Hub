@@ -1,4 +1,4 @@
-import { Box, Skeleton, Paper, Avatar } from '@mui/material';
+import { Box, Skeleton, Paper } from '@mui/material';
 
 const ProductReviewsSkeleton = () => {
   return (
